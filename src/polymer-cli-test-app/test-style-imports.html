@@ -1,0 +1,17 @@
+<custom-style>
+  <style>
+  :root {
+    --thisWorks: #F00;
+  }
+  </style>
+</custom-style>
+
+<dom-module id="test-style-imports">
+  <template>
+    <style>
+    :root {
+      --thisDoesNotWork: #F00;
+    }
+    </style>
+  </template>
+</dom-module>

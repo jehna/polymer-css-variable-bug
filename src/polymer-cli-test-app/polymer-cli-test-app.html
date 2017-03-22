@@ -1,0 +1,33 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="./test-style-imports.html">
+
+<dom-module id="polymer-cli-test-app">
+  <template>
+    <style include="test-style-imports">
+      #works {
+        background: var(--thisWorks);
+      }
+      #doesnotwork {
+        background: var(--thisDoesNotWork);
+      }
+    </style>
+    <div id="works">This should be red</div>
+    <div id="doesnotwork">This should also be red</div>
+  </template>
+
+  <script>
+    class MyApplication extends Polymer.Element {
+      static get is() { return 'polymer-cli-test-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'polymer-cli-test-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MyApplication.is, MyApplication);
+  </script>
+</dom-module>

@@ -1,0 +1,6 @@
+{
+  "name": "polymer-cli-test",
+  "short_name": "polymer-cli-test",
+  "start_url": "/",
+  "display": "standalone"
+}

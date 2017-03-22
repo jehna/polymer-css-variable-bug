@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "polymer-cli": "0.18.0-pre.13"
+  },
+  "scripts": {
+    "build": "polymer build",
+    "start": "cd build/bundled/ && python -m SimpleHTTPServer 8081"
+  }
+}

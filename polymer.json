@@ -1,0 +1,27 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/polymer-cli-test-app/polymer-cli-test-app.html",
+  "lint": {
+    "rules": [
+      "polymer-2"
+    ]
+  },
+  "builds": [
+    {
+      "name": "bundled",
+      "addServiceWorker": false,
+      "insertPrefetchLinks": false,
+      "bundle": true,
+      "html": {
+        "minify": false
+      },
+      "css": {
+        "minify": false
+      },
+      "js": {
+        "minify": false,
+        "compile": true
+      }
+    }
+  ]
+}
